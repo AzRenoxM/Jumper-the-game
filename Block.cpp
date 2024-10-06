@@ -1,5 +1,6 @@
 #include"Block.hpp"
 
+
 Block::Block(SDL_Renderer* renderer_block, SDL_Window* window_block, int block_position_x_beg, int block_position_x_fin, int block_position_y)
 	: renderer_block(renderer_block), window_block(window_block), block_position_x_beg(block_position_x_beg), block_position_x_fin(block_position_x_fin), block_position_y(block_position_y) {
 		this->lenght = this->block_position_x_fin - this->block_position_x_beg;

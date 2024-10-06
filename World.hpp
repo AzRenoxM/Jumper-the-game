@@ -2,6 +2,7 @@
 #define WORLD_HPP
 
 #include<SDL2/SDL_image.h>
+#include"Stickman.hpp"
 #include<SDL2/SDL.h>
 #include"Block.hpp"
 #include<iostream>
@@ -21,10 +22,12 @@ private:
 
    std::vector<Block*> block_distribution;
    std::vector<SDL_Texture*> BackGround_frames; 
+   std::vector<SDL_Texture*> standing_frames; 
 public:
    void start();
    void createLoad_hardCode_map_1();
    void create_backGround_frames();
+   void create_standing_frames();
    World(int WINDOW_SIZE_X = 800, int WINDOW_SIZE_Y = 800);
    ~World();
 };
