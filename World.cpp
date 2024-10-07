@@ -1,6 +1,4 @@
-#include"Stickman.hpp"
 #include"World.hpp"
-#include"Block.hpp"
 
 World::World(int WINDOW_SIZE_X, int WINDOW_SIZE_Y)
    : WINDOW_SIZE_X(WINDOW_SIZE_X), WINDOW_SIZE_Y(WINDOW_SIZE_Y) {
@@ -111,7 +109,7 @@ void World::start(){
       // SDL_RenderCopy(this->renderer, this->standing_frames[frame_index_standing], nullptr, &temp_rect_standing);
 
       switch(stickman->spec_state_buffer){
-         case stickman->SpecState::STANDING_PLACE:
+         case Stickman::SpecState::STANDING_PLACE:
             if(current_time - lastUpdateTime_stickman >= stickman->standing_place_delay){
                lastUpdateTime_stickman = current_time;
                Stickman::standing_place_index = (Stickman::standing_place_index + 1) % Stickman::standing_place_images_number.size();
