@@ -31,7 +31,7 @@ public:
       RUN_FROM_PLACE_LEFT,
       RUN_RIGHT,
       RUN_FROM_PLACE_RIGHT
-   };ht_frames;
+   };
 
    Stickman(SDL_Renderer* renderer);
 
